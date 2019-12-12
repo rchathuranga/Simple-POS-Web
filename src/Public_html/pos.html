@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS</title>
+    <link rel="stylesheet" href="css/POS/style.css">
+    <link rel="stylesheet" href="css/POS/table768media.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.10.1-web/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="assets/logo-att-color-trans-200x200.png" type="img/png">
+
+    <!--<meta name="keywords" content="  ||  ">-->
+</head>
+<body>
+    <nav>
+        <img src="assets/logo-att-color-trans-200x200.png" alt="logo" width="40%">
+        <img src="assets/pandora.png" alt="name" width="90%">
+        <a href="index.html"><div>
+            <h3>DashBoard</h3>
+        </div></a>
+        <a href="pos.html"><div style="background: #1C894A">
+            <h3 style="color:white;">POS</h3>
+        </div></a>
+        <a href="ManageItem.html"><div>
+            <h3>Manage Items</h3>
+        </div></a>
+        <a href="ManageCustomer.html"><div>
+            <h3>Manage Customers</h3>
+        </div></a>
+        <a href="ViewOrder.html"><div>
+            <h3>View Orders</h3>
+        </div></a>
+        <a href=""><div>
+            <h3>Settings</h3>
+        </div></a>
+    </nav>
+    <header>
+        <h3>P O S</h3>
+    </header>
+    <main>
+        <section>
+            <article>
+            <h3>Customer Info</h3>
+            <form action="">
+                <input type="text" name="" id="txtName" placeholder="Full Name">
+                <input type="tel" name="" id="txtContact" placeholder="Contact">
+                <input type="text" name="" id="txtNic" placeholder="ID number">
+                <button type="submit">Add</button>
+            </form>
+                <div></div>
+                <h5>OR</h5>
+                <div>
+                    <input type="search" placeholder="Search Customer">
+                    <button type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div></div>
+                </div>
+            </article>
+            <article>
+                <h3>Order Review</h3>
+                <h4>Customer Name</h4>
+                <article>
+                    <input type="search" placeholder="Search Items">
+                    <button type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div></div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Item</h3>
+                        <h3>Stock</h3>
+                        <h3>Price</h3>
+                        <form action="">
+                            <input type="number" placeholder="QTY">
+                            <input type="text" placeholder="Discount">
+                            <input type="text" placeholder="Amount">
+                            <button type="submit">Add to List</button>
+                        </form>
+                    </div>
+                    <div>
+                        <table>
+                            <thead>
+                               <tr>
+                                   <th>ID</th>
+                                   <th>Name</th>
+                                   <th>QTY</th>
+                                   <th>Discount</th>
+                                   <th>Amount</th>
+                               </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Iphone 11</td>
+                                    <td>2</td>
+                                    <td>10000.00</td>
+                                    <td>540,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Iphone 11</td>
+                                    <td>2</td>
+                                    <td>10000.00</td>
+                                    <td>540,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Iphone 11</td>
+                                    <td>2</td>
+                                    <td>10000.00</td>
+                                    <td>540,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Iphone 11</td>
+                                    <td>2</td>
+                                    <td>10000.00</td>
+                                    <td>540,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Iphone 11</td>
+                                    <td>2</td>
+                                    <td>10000.00</td>
+                                    <td>540,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Iphone 11</td>
+                                    <td>2</td>
+                                    <td>10000.00</td>
+                                    <td>540,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Iphone 11</td>
+                                    <td>2</td>
+                                    <td>10000.00</td>
+                                    <td>540,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Iphone 11</td>
+                                    <td>2</td>
+                                    <td>10000.00</td>
+                                    <td>540,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Iphone 11</td>
+                                    <td>2</td>
+                                    <td>10000.00</td>
+                                    <td>540,000.00</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4">Total :</td>
+                                    <td>59093025</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <form action="">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Place Order</button>
+                    </form>
+                </article>
+            </article>
+        </section>
+
+    </main>
+</body>
+</html>
