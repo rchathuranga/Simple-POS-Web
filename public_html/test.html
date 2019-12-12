@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            border: 10px solid gray;
+            border-top: 10px solid #213667;
+            border-radius: 100%;
+        }
+
+        div:hover {
+            animation: rotatet 2s 2;
+        }
+
+
+        @keyframes rotatet {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>lo</p>
+</div>
+
+<a href="tel:+940770180886">07701808886</a>
+
+<script !src="">
+    hideAll();
+    $("#dashboard").css('display', 'block');
+
+
+    $("#indexhtml").click(function () {
+        hideAll();
+        $("#CssIndex").attr('href', 'css/dashboard/dashboard.css');
+        $("#CssIndexMedia").attr('herf', 'css/dashboard/dashboard768media.css')
+        $("#dashboard").css("display", "block");
+        $("#header").text("DASHBOARD");
+        $('#indexhtml').css({
+            'color': 'red',
+            'background-color': '#1C894A'
+        });
+    });
+
+    $("#poshtml").click(function () {
+        hideAll();
+        $("#CssIndex").attr('href', 'css/POS/style.css');
+        $("#CssIndexMedia").attr('herf', 'css/POS/table768media.css')
+        $("#POS").css("display", "block");
+        $("#header").text("POS");
+        $('#poshtml').css({
+            'background-color': '#1C894A'
+        });
+    });
+
+    $("#ManageItemhtml").click(function () {
+        hideAll();
+        $("#CssIndex").attr('href', 'css/Item/ItemStyle.css');
+        $("#CssIndexMedia").attr('herf', 'css/Item/table768media.css')
+        $("#item").css("display", "block");
+        $("#header").text("MANAGE ITEM");
+        $('#ManageItemhtml').css({
+            'background-color': '#1C894A'
+        });
+    });
+
+    $("#ManageCustomerhtml").click(function () {
+        hideAll();
+        $("#CssIndex").attr('href', 'css/Customer/CustomerStyle.css');
+        $("#CssIndexMedia").attr('herf', 'css/Customer/table768media.css')
+        $("#customer").css("display", "block");
+        $("#header").text("MANAGE CUSTOMER");
+        $('#ManageCustomerhtml').css({
+            'background-color': '#1C894A'
+        });
+    });
+
+    $("#ViewOrderhtml").click(function () {
+        hideAll();
+        $("#CssIndex").attr('href', 'css/Order/OrderStyle.css');
+        $("#CssIndexMedia").attr('herf', 'css/Order/table768media.css')
+        $("#viewOrder").css("display", "block");
+        $("#header").text("ORDER");
+        $('#viewOrderhtml').css({
+            'background-color': '#1C894A'
+        });
+    });
+
+    $('#h3index').css({
+        'color': '#213667',
+    });
+
+    function hideAll() {
+        $("#dashboard").css('display', 'none');
+        $("#POS").css('display', 'none');
+        $("#item").css("display", "none");
+        $("#customer").css("display", "none");
+        $("#viewOrder").css("display", "none");
+    }
+</script>
+<script !src="">
+
+
+    var ts = "<tr>"
+    var te = "</tr>"
+
+    var ds = "<td>"
+    var de = "</td>"
+
+    var cusName = $($('#customerAddForm').children().get(0)).val();
+    var cusContact = $($('#customerAddForm').children().get(1)).val();
+    var cusId = $($('#customerAddForm').children().get(2)).val();
+
+    function click() {
+        var name = $($(this).children()[0]).text();
+        var contact = $($(this).children()[1]).text();
+        var id = $($(this).children()[2]).text();
+
+
+        console.log(name);
+        console.log(contact);
+        console.log(id);
+
+        $($('#customerAddForm').children().get(0)).val(name);
+        $($('#customerAddForm').children().get(1)).val(contact);
+        $($('#customerAddForm').children().get(2)).val(id);
+    }
+
+    $('#cusAdd').click(function () {
+        console.log(cusName);
+        $('#containter').append('<h3>' + $($('#customerAddForm').children().get(0)).val() + " " + $($('#customerAddForm').children().get(1)).val() + ' ' + $($('#customerAddForm').children().get(2)).val() + '</h3>');
+        // $('#containter').append('<h3>'+$($('#customerAddForm').children().get(0)).val()+'</h3>');
+        // $('#containter').append('<h3>'+$($('#customerAddForm').children().get(0)).val()+'</h3>');
+        var tableBody = $('table>tbody');
+
+
+        var row = ts + ds +
+            $($('#customerAddForm').children().get(0)).val()
+            + de + ds +
+            $($('#customerAddForm').children().get(1)).val()
+            + de + ds +
+            $($('#customerAddForm').children().get(2)).val()
+            + de + te;
+        tableBody.append(row);
+        $('#table>tbody').children().click(click());
+    });
+
+    $("#table>tbody tr").click(function () {
+        var id=($(this).children()[0]).text();
+    })
+
+    $("#table>tbody tr").on("dblclick",function () {
+        $(this).remove();
+    });
+
+</script>
+</body>
+</html>

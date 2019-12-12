@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Items</title>
+    <link rel="stylesheet" href="css/Item/ItemStyle.css">
+    <link rel="stylesheet" href="css/Item/table768media.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.10.1-web/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/logo-att-color-trans-200x200.png" type="img/png">
+</head>
+<body>
+<nav>
+    <img src="assets/logo-att-color-trans-200x200.png" alt="logo" width="40%">
+    <img src="assets/pandora.png" alt="name" width="90%">
+    <a href="index.html"><div>
+        <h3>DashBoard</h3>
+    </div></a>
+    <a href="pos.html"><div>
+        <h3>POS</h3>
+    </div></a>
+    <a href="ManageItem.html"><div style="background: #1C894A">
+        <h3 style="color:white;">Manage Items</h3>
+    </div></a>
+    <a href="ManageCustomer.html"><div>
+        <h3>Manage Customers</h3>
+    </div></a>
+    <a href="ViewOrder.html"><div>
+        <h3>View Orders</h3>
+    </div></a>
+    <a href=""><div>
+        <h3>Settings</h3>
+    </div></a>
+</nav>
+<header>
+    <h3>Manage Item</h3>
+</header>
+<main>
+    <section>
+        <article>
+            <h3>Search Items</h3>
+            <div>
+                <input type="search">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div></div>
+            </div>
+        </article>
+        <article>
+            <h3>Item View</h3>
+            <div>
+                <form action="">
+                    <input type="text" placeholder="Item Description">
+                    <input type="tel" placeholder="Qty">
+                    <input type="text" placeholder="Brand">
+                    <input type="text" placeholder="Buying Price">
+                    <input type="text" placeholder="Selling Price">
+                    <button type="submit">Delete</button>
+                    <button type="submit">Update Item</button>
+                    <button type="submit">Add New</button>
+                </form>
+            </div>
+            <div>
+                <div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Brand</th>
+                            <th>Qty</th>
+                            <th>Buy.Pr</th>
+                            <th>Sell.Pr</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Iphone X</td>
+                            <td>Apple</td>
+                            <td>10</td>
+                            <td>120,000</td>
+                            <td>156,000</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+</body>
+</html>
